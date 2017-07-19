@@ -186,7 +186,7 @@ void read_data(const char *file, double z[][3], double delta_odom[])
 }
 
 
-#define Ndata 9298
+#define Ndata 7005
 
 int main(int argc, char ** argv)
 {    
@@ -266,6 +266,8 @@ int main(int argc, char ** argv)
 	//}
 
 	//matClose(pmat);
+
+	printf("[%.12f, %.12f, %.12f]\n", x[Ndata - 1][0], x[Ndata - 1][1], x[Ndata - 1][2]);
 
 	printf("EKF Process Ending....\n");
 	getchar();
